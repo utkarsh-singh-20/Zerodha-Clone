@@ -1,10 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const faqItems = document.querySelectorAll('.faq-item');
+    const faqToggles = document.querySelectorAll('.faq-toggle');
 
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        question.addEventListener('click', () => {
-            item.classList.toggle('active');
+    faqToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const faqItem = toggle.parentElement;
+            faqItem.classList.toggle('active');
+
+            // Toggle icon between + and -
+            const icon = toggle.querySelector('.faq-icon');
+            if (faqItem.classList.contains('active')) {
+                icon.textContent = '-';
+            } else {
+                icon.textContent = '+';
+            }
         });
     });
 });

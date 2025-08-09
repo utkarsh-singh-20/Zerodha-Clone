@@ -17,6 +17,18 @@ a {
     color: inherit;
 }
 
+a:hover {
+    color: #387ed1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+button:hover, .btn-primary:hover, .btn-secondary:hover, .btn-link:hover {
+    filter: brightness(85%);
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
 /* Navbar styles */
 .navbar {
     display: flex;
@@ -1020,4 +1032,169 @@ footer {
     cursor: pointer;
     font-weight: 600;
     color: #387ed1;
+}
+
+/* Products page styles */
+
+.product-hero {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.product-hero h1 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.product-hero .subheading {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.product-hero a {
+    color: #387ed1;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.product-section {
+    padding: 4rem 2rem;
+}
+
+.container.flex-row {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.product-section.reverse .container.flex-row {
+    flex-direction: row-reverse;
+}
+
+.product-image {
+    flex: 1 1 400px;
+    max-width: 500px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-text {
+    flex: 1 1 400px;
+    max-width: 600px;
+}
+
+.product-text h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.product-text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.product-links {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-link {
+    color: #387ed1;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+.app-badges {
+    display: flex;
+    gap: 1rem;
+}
+
+.app-badges a img {
+    height: 40px;
+    width: auto;
+}
+
+.partner-platforms {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.partner-platforms p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.partner-platforms h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.partner-logos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+}
+
+.partner-logo-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.partner-logo-item img {
+    max-width: 120px;
+    margin-bottom: 1rem;
+}
+
+.partner-logo-item h3 {
+    font-size: 1.25rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.partner-logo-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.signup-btn {
+    background-color: #387ed1;
+    color: #fff;
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #2a5db0;
 }
