@@ -1,0 +1,1200 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #387ed1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+button:hover, .btn-primary:hover, .btn-secondary:hover, .btn-link:hover {
+    filter: brightness(85%);
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #387ed1; /* Zerodha blue */
+}
+.logo img{
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #387ed1;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-image {
+    max-width: 730px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero-text {
+    max-width: 500px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #387ed1;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #2a5db0;
+}
+
+/* Trust with confidence section */
+.trust-confidence {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.trust-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.trust-content {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.trust-text {
+    flex: 1 1 400px;
+    max-width: 600px;
+}
+
+.trust-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #222;
+}
+
+.trust-text h3 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.trust-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.trust-text a {
+    color: #387ed1;
+    text-decoration: underline;
+}
+
+.trust-logos {
+    flex: 1 1 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.trust-logos img {
+    max-width: 500px;
+    height: 500px;
+    /* filter: grayscale(100%); */
+    /* transition: filter 0.1s ease; */
+}
+
+.education-image img {
+    max-width: 450px;
+    height: auto;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.trust-logos img:hover {
+    filter: none;
+}
+
+/* Pricing highlight section */
+.pricing-highlight {
+    padding: 4rem 2rem;
+}
+
+.pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pricing-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.pricing-container p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.pricing-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 180px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.pricing-card h3 {
+    font-size: 2.5rem;
+    color: #f9a825;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Secondary button */
+.btn-secondary {
+    background-color: transparent;
+    color: #387ed1;
+    border: 2px solid #387ed1;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background-color: #387ed1;
+    color: #fff;
+}
+
+/* Market education section */
+.market-education {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.education-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.education-content {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.education-text {
+    flex: 1 1 400px;
+    max-width: 600px;
+}
+
+.education-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.education-text h3 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.education-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.education-text a {
+    color: #387ed1;
+    text-decoration: underline;
+}
+
+.education-image {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.education-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Testimonials section */
+.testimonials {
+    padding: 4rem 2rem;
+}
+
+.testimonials .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #222;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.testimonial-card h4 {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-logo-section {
+    flex: 1 1 250px;
+}
+
+.footer-logo-section .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #387ed1;
+    margin-bottom: 0.5rem;
+}
+
+.footer-logo-section p {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.social-icons a:hover img {
+    filter: none;
+}
+
+.footer-links-section {
+    flex: 3 1 600px;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1 1 150px;
+}
+
+.footer-column h4 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #387ed1;
+}
+
+.footer-disclaimer {
+    flex-basis: 100%;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #777;
+}
+
+.footer-disclaimer p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-disclaimer a {
+    color: #387ed1;
+    text-decoration: underline;
+}
+
+/* Signup page new sections styles */
+
+/* First Section Styling - Matches Zerodha Style */
+/* First Section Wrapper */
+.signup-main {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Row 1: Heading & Subheading */
+.signup-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.signup-header h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.signup-header p {
+    font-size: 1.15rem;
+    color: #666;
+}
+
+/* Row 2: Two Columns */
+.signup-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Left Column: Illustration */
+.signup-info {
+    flex: 1 1 500px;
+    text-align: center;
+}
+
+.signup-image {
+    max-width: 100%;
+    height: 400px;
+}
+
+/* Right Column: Signup Form */
+.signup-form-container {
+    flex: 1 1 350px;
+    max-width: 380px;
+    border: 1px solid #e0e0e0;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: none;
+    background: #fff;
+}
+
+.signup-form-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.signup-form-container p {
+    font-size: 0.95rem;
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+
+/* Phone Input */
+.phone-input {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.country-code {
+    background-color: #f7f7f7;
+    padding: 0.75rem 1.25rem;
+    font-weight: 500;
+    color: #444;
+    display: flex;
+    align-items: center;
+}
+
+.phone-input input[type="tel"] {
+    border: none;
+    padding: 0.75rem 1rem;
+    flex: 1;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Get OTP Button */
+.signup-form-container button {
+    width: 100%;
+    background-color: #387ed1;
+    color: white;
+    font-size: 1rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.signup-form-container button:hover {
+    background-color: #2f6bb0;
+}
+
+/* Terms text */
+.terms-text {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 1rem;
+    line-height: 1.4;
+}
+
+.terms-text a {
+    color: #387ed1;
+}
+
+/* Investment options section */
+.investment-options {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.investment-options h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #222;
+}
+
+.investment-grid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.investment-item {
+    flex: 1 1 200px;
+    max-width: 220px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.investment-item img {
+    max-width: 80px;
+    margin-bottom: 1rem;
+}
+
+.investment-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.investment-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.explore-investments-btn-container {
+    margin-top: 2rem;
+}
+
+.explore-investments-btn-container .btn-primary {
+    padding: 0.75rem 2.5rem;
+}
+
+/* Steps to open account section */
+.open-account-steps {
+    padding: 4rem 2rem;
+}
+
+.steps-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.steps-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #222;
+    text-align: center;
+}
+
+.steps-content {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps-image {
+    flex: 1 1 400px;
+    max-width: 500px;
+}
+
+.steps-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.steps-list {
+    flex: 1 1 300px;
+    max-width: 400px;
+    list-style: none;
+    counter-reset: step-counter;
+}
+
+.steps-list li {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 3rem;
+    color: #222;
+}
+
+.steps-list li::before {
+    counter-increment: step-counter;
+    content: counter(step-counter, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #387ed1;
+}
+
+/* Pricing and benefits section */
+.pricing-benefits {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.pricing-benefits-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits-text {
+    flex: 1 1 300px;
+    max-width: 600px;
+}
+
+.benefits-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #222;
+}
+
+.benefits-text ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.benefits-text ul li {
+    font-size: 1.1rem;
+    margin-bottom: 1.75rem;
+    color: #555;
+}
+
+.benefits-text ul li strong {
+    color: #222;
+}
+
+.benefits-image {
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.benefits-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Account types section */
+.account-types {
+    padding: 4rem 2rem;
+}
+
+.account-types-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.account-types-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #222;
+}
+
+.account-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.account-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.account-card img {
+    max-width: 60px;
+    margin-bottom: 1rem;
+}
+
+.account-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.account-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* FAQ section */
+.faq-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #222;
+    text-align: center;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    cursor: pointer;
+    color: #387ed1;
+    font-weight: 600;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 1rem;
+    color: #555;
+    padding-left: 1rem;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding-top: 0.5rem;
+}
+
+/* Final signup call to action */
+.final-signup-cta {
+    padding: 4rem 2rem;
+    text-align: center;
+    line-height: 1.9rem;
+}
+
+/* About page styles */
+.about-hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222;
+    line-height: 1.4;
+}
+
+.about-content {
+    display: flex;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-columns {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-column {
+    flex: 1 1 400px;
+    max-width: 600px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-column p {
+    margin-bottom: 1.5rem;
+}
+
+.about-column a {
+    color: #387ed1;
+    text-decoration: underline;
+}
+
+/* People section */
+.people {
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.people h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 3rem;
+}
+
+.people-profiles {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+.member {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: left;
+    align-items: center;
+    margin-left: 65px;
+}
+.founder {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 4rem;
+    justify-content: space-around;
+    margin-left: 110px;
+}
+
+
+.det p{
+    width: 500px;
+}
+.profile {
+    flex: 1 1 250px;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+.profile img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.profile h4 {
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 0.25rem;
+}
+
+.profile .title {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.profile p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.profile a {
+    color: #387ed1;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+.bio-toggle {
+    cursor: pointer;
+    font-weight: 600;
+    color: #387ed1;
+}
+
+/* Products page styles */
+
+.product-hero {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.product-hero h1 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.product-hero .subheading {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.product-hero a {
+    color: #387ed1;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.product-section {
+    padding: 4rem 2rem;
+}
+
+.container.flex-row {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.product-section.reverse .container.flex-row {
+    flex-direction: row-reverse;
+}
+
+.product-image {
+    flex: 1 1 400px;
+    max-width: 500px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-text {
+    flex: 1 1 400px;
+    max-width: 600px;
+}
+
+.product-text h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.product-text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.product-links {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-link {
+    color: #387ed1;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+.app-badges {
+    display: flex;
+    gap: 1rem;
+}
+
+.app-badges a img {
+    height: 40px;
+    width: auto;
+}
+
+.partner-platforms {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.partner-platforms p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.partner-platforms h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.partner-logos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+}
+
+.partner-logo-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.partner-logo-item img {
+    max-width: 120px;
+    margin-bottom: 1rem;
+}
+
+.partner-logo-item h3 {
+    font-size: 1.25rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.partner-logo-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.signup-btn {
+    background-color: #387ed1;
+    color: #fff;
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #2a5db0;
+}
